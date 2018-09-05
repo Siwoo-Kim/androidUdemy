@@ -1,0 +1,19 @@
+
+layout XML 디자인 모드 This view is not constrained 트러블 슈팅
+
+    1) In Projects window, go to Gradle Scripts > build.gradle (Module:app)
+
+    2) Scroll down to dependencies
+
+    3) Look for implementation 'com.android.support:appcompat-v7:28.0.0-beta03'
+
+    4) Change this line to implementation 'com.android.support:appcompat-v7:28.0.0-alpha1'
+
+    5) A banner should pop up at the top of the window, click Sync Now in the right corner.
+
+    This works for Android Studio v3.1 click for image of edit to build.gradle file
+
+    디자인 모드 API MODE
+        - 현재 프리뷰로 돌아가는 뷰의 SDK 버전
+    ConstraintLayout 에서 View 컨텐츠 적용 안될시
+        - infer constraints 키 클릭
